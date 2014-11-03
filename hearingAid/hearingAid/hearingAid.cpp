@@ -29,9 +29,11 @@ int main()
 	*/
 
 	SineWave *sw = new SineWave(device);
-	sw->CreateWave(SineWave::STEREO_LEFT, 200, 20000, 100, 10);
+	// sw->CreateWave(SineWave::STEREO, 440, 441, 1, 10);
+	sw->CreateWave(30);
+	//sw->SaveSineData("file.wav");
 	sw->Play();
-	delete sw;
+	 delete sw;
 
 	alcCloseDevice(device);
 

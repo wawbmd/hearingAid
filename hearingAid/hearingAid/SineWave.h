@@ -19,7 +19,10 @@ public:
     } Channel;
 
     void CreateWave( Channel outputChannel, ALint startFreq, ALint endFreq, ALint step, ALint seconds );
+	void CreateWave(ALint seconds);
     void Play();
+
+	void SaveSineData(const char *filePath);
 
 private:
 
